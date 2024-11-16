@@ -156,7 +156,7 @@ function App() {
         >
           <div className="max-w-lg w-full">
             <div className="mb-4 flex items-center justify-between">
-              <label htmlFor="loginTime" className="text-gray-700 text-sm font-bold">Login Time (HH:MM:SS)</label>
+              <label htmlFor="loginTime" className="text-gray-700 text-sm font-bold">Login Time (HH:MM)</label>
               <input
                 id="loginTime"
                 className="input-field text-right"
@@ -167,7 +167,7 @@ function App() {
               />
             </div>
             <div className="mb-4 flex items-center justify-between">
-              <label htmlFor="logoutTime" className="text-gray-700 text-sm font-bold">Expected Logout Time (HH:MM:SS)</label>
+              <label htmlFor="logoutTime" className="text-gray-700 text-sm font-bold">Expected Logout Time (HH:MM)</label>
               <input
                 id="logoutTime"
                 className="input-field text-right"
@@ -182,7 +182,7 @@ function App() {
             {breaks.map((breakTime, index) => (
               <div key={index} className="mb-4 flex items-center justify-between space-x-4">
                 <div>
-                  <label htmlFor={`breakOut-${index}`} className="text-gray-700 text-sm font-bold">Break Out Time (HH:MM:SS)</label>
+                  <label htmlFor={`breakOut-${index}`} className="text-gray-700 text-sm font-bold">Break Out Time (HH:MM)</label>
                   <input
                     id={`breakOut-${index}`}
                     className="input-field text-right"
@@ -196,7 +196,7 @@ function App() {
                   />
                 </div>
                 <div>
-                  <label htmlFor={`breakIn-${index}`} className="text-gray-700 text-sm font-bold">Break In Time (HH:MM:SS)</label>
+                  <label htmlFor={`breakIn-${index}`} className="text-gray-700 text-sm font-bold">Break In Time (HH:MM)</label>
                   <input
                     id={`breakIn-${index}`}
                     className="input-field text-right"
